@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tienda.css">
+    <title>Tienda de Electrónica y Robótica</title>
+</head>
+<body>
+
+    
+    
+          
+    <header>
+        <h1 class="h11">Tienda de Electrónica y Robótica</h1>
+        <nav>
+            
+        
+            <ul>
+                <li ><a  class="l1" href="#arduino">Arduino</a></li>
+            <li ><a class="l1" href="#electronica">Electrónica</a></li>
+           <li ><a class="l1" href="#robotica">Robótica</a></li>
+           <li ><a class="l1" href="#informatica">Informática</a></li>  
+           <li ><a class="l1" href="#carrito">Carrito (<span id="cart-count">0</span>)</a></li>
+             <li ><a class="l1" href="#contacto">Contacto</a></li>
+          <li ><a class="l1" href="#acerca">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <center>
+                <h2 class="h22">Productos Destacados de Arduino Uno</h2>
+            </center>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="arduino img/ardu r3.jpeg" alt="Arduino Uno R3">
+                    <h3>Arduino Uno R3</h3>
+                    <p>Placa de desarrollo con microcontrolador ATmega328.</p>
+                    <p class="precio">$25.00</p>
+                    <button onclick="addToCart('Arduino Uno R3', 25)">Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="arduino img/Kit de Inicio Arduino.jpeg" alt="Kit de Inicio Arduino">
+                    <h3>Kit de Inicio Arduino</h3>
+                    <p>Kit completo con componentes para principiantes.</p>
+                    <p class="precio">$49.99</p>
+                    <button onclick="addToCart('Kit de Inicio Arduino', 49.99)">Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="arduino img/Arduino Uno Rev3.jpeg" alt="Arduino Uno Rev3">
+                    <h3>Arduino Uno Rev3</h3>
+                    <p>Versión mejorada del Arduino Uno.</p>
+                    <p class="precio">$29.99</p>
+                    <button onclick="addToCart('Arduino Uno Rev3', 29.99)">Añadir al carrito</button>
+                   
+                </div>
+                <div class="producto">
+                    <img src="arduino img/Placa de Expansión Arduino.jpeg" alt="Placa de Expansión Arduino">
+                    <h3>Placa de Expansión Arduino</h3>
+                    <p>Expande las capacidades de tu Arduino Uno.</p>
+                    <p class="precio">$15.00</p>
+                    <button onclick="addToCart('Placa de Expansión Arduino', 15.00)">Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="arduino img/Sensor de Movimiento.jpeg" alt="Sensor de Movimiento">
+                    <h3>Sensor de Movimiento</h3>
+                    <p>Detecta movimiento y se conecta a tu Arduino.</p>
+                    <p class="precio">$10.00</p>
+                    <button onclick="addToCart('Sensor de Movimiento', 10.00)">Añadir al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="arduino img/Módulo de Bluetooth.jpeg" alt="Módulo de Bluetooth">
+                    <h3>Módulo de Bluetooth</h3>
+                    <p>Conéctate de forma inalámbrica a tu Arduino.</p>
+                    <p class="precio">$12.00</p>
+                    <button onclick="addToCart('Módulo de Bluetooth', 12.00)">Añadir al carrito</button>
+                   
+                </div>
+
+                <div class="producto">
+                    <img src="arduino img/Raspberry Pi 4.jpeg" alt="Raspberry Pi 4">
+                    <h3>Raspberry Pi 4</h3>
+                    <p>Computadora compacta de alto rendimiento.</p>
+                    <p>Precio: $55.00</p>
+                    <button onclick="addToCart('Raspberry Pi 4', 55.00)">Añadir al carrito</button>
+                </div>
+
+                    <div class="producto">
+                        <img src="arduino img/Servo Motor.jpeg" alt="Servo Motor">
+                        <h3>Servo Motor</h3>
+                        <p>Motor servo para control de posición.</p>
+                        <p>Precio: $12.00</p>
+                        <button onclick="addToCart('Servo Motor', 12.00)">Añadir al carrito</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="arduino img/Placa de Protoboard.jpeg" alt="Placa de Protoboard">
+                        <h3>Placa de Protoboard</h3>
+                        <p>Placa para realizar prototipos electrónicos.</p>
+                        <p>Precio: $7.00</p>
+                        <button onclick="addToCart('Placa de Protoboard', 7.00)">Añadir al carrito</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="arduino img/Pantalla LCD.jpeg" alt="Pantalla LCD">
+                        <h3>Pantalla LCD</h3>
+                        <p>Pantalla para mostrar información en proyectos.</p>
+                        <p>Precio: $15.00</p>
+                        <button onclick="addToCart('Pantalla LCD', 15.00)">Añadir al carrito</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="arduino img/Kit de Sensores.jpeg" alt="Kit de Sensores">
+                        <h3>Kit de Sensores</h3>
+                        <p>Varios sensores para experimentar.</p>
+                        <p>Precio: $40.00</p>
+                        <button onclick="addToCart('Kit de Sensores', 40.00)">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="arduino img/Robot Assembler.jpeg" alt="Robot Assembler">
+                        <h3>Robot Assembler</h3>
+                        <p>Kit para ensamblar un robot móvil.</p>
+                        <p>Precio: $80.00</p>
+                        <button onclick="addToCart('Robot Assembler', 80.00)">Añadir al carrito</button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="arduino img/Sensor de Temperatura.jpeg" alt="Sensor de Temperatura">
+                        <h3>Sensor de Temperatura</h3>
+                        <p>Medidor de temperatura ambiente.</p>
+                        <p>Precio: $5.00</p>
+                        <button onclick="addToCart('Sensor de Temperatura', 5.00)">Añadir al carrito</button>
+                       
+                    </div>
+                    <div class="producto">
+                        <img src="arduino img/Kit de Cables.jpeg" alt="Kit de Cables">
+                        <h3>Kit de Cables</h3>
+                        <p> Conjunto de cables para conexiones.</p>
+                        <p>Precio: $15.00</p>
+                        <button onclick="addToCart('Kit de Cables', 15.00)">Añadir al carrito</button>
+                    </div>
+                    <div class="producto">
+                        <img src="arduino img/Kit de Robótica Educativa.jpeg" alt="Kit de Robótica Educativa">
+                        <h3>Kit de Robótica Educativa</h3>
+                        <p>Ideal para aprender robótica.</p>
+                        <p>Precio: $100.00</p>
+                        <button onclick="addToCart('Kit de Robótica Educativa', 100.00)">Añadir al carrito</button>
+                    </div>
+            </div>
+        </section>
+        
+
+        
+             <center>
+
+
+       
+       <H2 class="a1"> Anuncio Publicitario</H2>
+             </center>
+        <video class="video1" autoplay muted >           
+            <source src="arduino img/Cr7.mp4" type="video/mp4">
+            <source src="arduino img/Cr7.mp4" type="video/mp4">
+            Tu Navegador no es compatible con HTML5           
+        </video>
+  
+
+      
+
+        <center><h2 class="h21"> electrónica</h2></center>
+        
+        <section id="electronica">
+            <div class="product" id="product1">
+                <h3>Smartphone XYZ</h3>
+                <img src="arduino img/Smartphone XYZ.jpeg" alt="Smartphone XYZ">
+                <p>Precio: $699</p>
+                <button onclick="addToCart('Smartphone XYZ', 699)">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product2">
+                <h3>Tablet ABC</h3>
+                <img src="arduino img/Tablet ABC.jpeg" alt="Tablet ABC">
+                <p>Precio: $499</p>
+                <button onclick="addToCart('Tablet ABC', 499)">Agregar al carrito</button>
+            </div>
+            
+            <div class="product" id="product4">
+                <h3>Smartwatch GHI</h3>
+                <img src="arduino img/Smartwatch GHI.jpeg" alt="Smartwatch GHI">
+                <p>Precio: $199</p>
+                <button onclick="addToCart('Smartwatch GHI', 199)">Agregar al carrito</button>
+            </div>
+            <div class="product" id="product5">
+                <h3>Audífonos JKL</h3>
+                <img src="arduino img/Audífonos JKL.jpeg" alt="Audífonos JKL">
+                <p>Precio: $89</p>
+                <button onclick="addToCart('Audífonos JKL', 89)">Agregar al carrito</button>
+            </div>
+        </section>
+        <section id="robotica">
+          <center>  <h2 class="h27">Productos de Robótica</h2></center>
+            <div class="product">
+                <h3>Robot Aspirador</h3>
+                <img src="arduino img/Robot Aspirador.jpeg" alt="Robot Aspirador">
+                <p>Precio: $299</p>
+                <button onclick="addToCart('Robot Aspirador', 299)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <h3>Drone con Cámara</h3>
+                <img src="arduino img/Drone con Cámara.jpeg" alt="Drone con Cámara">
+                <p>Precio: $499</p>
+                <button onclick="addToCart('Drone con Cámara', 499)">Agregar al carrito</button>
+            </div>
+        </section>
+
+
+        <section id="informatica"></section>
+            <center><h2 class="h23">Productos de Informática</h2></center>
+            <div class="product" id="product3">
+                <h3>Laptop </h3>
+                <img src="arduino img/Laptop 123.jpeg" alt="Laptop 123">
+                <p>Precio: $999</p>
+                <button onclick="addToCart('Laptop 123', 999)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <h3>Monitor 24"</h3>
+                <img src="arduino img/Monitor 24.jpeg" alt="Monitor 24">
+                <p>Precio: $199</p>
+                <button onclick="addToCart('Monitor 24', 199)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <h3>Laptop Gamer</h3>
+                <img src="arduino img/Laptop Gamer.jpeg" alt="Laptop">
+                <p>Potente laptop para gamers.</p>
+              <p>$1,200.00</p>
+              <button onclick="addToCart('Laptop', 1,200)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/Mouse Inalámbrico.jpeg" alt="Mouse">
+                <h3>Mouse Inalámbrico</h3>
+                <p>Mouse ergonómico y de alta precisión.</p>
+                <p>$50.00</p>
+                <button onclick="addToCart('Mouse', 50)">Agregar al carrito</button>
+            </div>
+            
+            <div class="producto">
+                <img src="arduino img/Teclado Mecánico.jpeg" alt="Teclado Mecánico">
+                <h3>Teclado Mecánico</h3>
+                <p>Teclado mecánico con retroiluminación RGB.</p>
+                <p>Precio: $80.00</p>
+                <button onclick="addToCart('Teclado Mecánico', 80)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/SSD 1TB.jpeg" alt="SSD 1TB">
+                <h3>SSD 1TB</h3>
+                <p>Disco duro sólido de 1TB para un rendimiento rápido.</p>
+                <p>Precio: $150.00</p>
+                <button onclick="addToCart('SSD 1TB', 150)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/Cámara Web.jpeg" alt="Cámara Web">
+                <h3>Cámara Web</h3>
+                <p>Cámara de alta definición para videoconferencias.</p>
+                <p>Precio: $50.00</p>
+                <button onclick="addToCart('Cámara Web', 50)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/Micrófono USB.jpeg" alt="Microfono USB">
+                <h3>Micrófono USB</h3>
+                <p>Micrófono de calidad para grabaciones y streaming.</p>
+                <p>Precio: $70.00</p>
+                <button onclick="addToCart('Microfono USB', 70)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/Soporte para Laptop.jpeg" alt="Soporte para Laptop">
+                <h3>Soporte para Laptop</h3>
+                <p>Soporte ajustable para mejorar la postura.</p>
+                <p>Precio: $30.00</p>
+                <button onclick="addToCart('Soporte para Laptop', 30)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="arduino img/Hub USB.jpeg" alt="Hub USB">
+                <h3>Hub USB</h3>
+                <p>Amplía puertos USB para conectar más dispositivos.</p>
+                <p>Precio: $20.00</p>
+                <button onclick="addToCart('Hub USB', 20)">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <div>     
+            <H2 class="a2"> Anuncio Publicitario</H2>
+                  </center>
+             <video class="video1" autoplay muted  >           
+                <source src="arduino img/coca.mp4" type="video/mp4">
+                 <source src="arduino img/coca.mp4" type="video/mp4">
+                 Tu Navegador no es compatible con HTML5           
+             </video>
+         </div>  
+
+     
+
+        <section id="contacto">
+           <center><h2 class="h24">Contacto</h2></center>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        
+
+        <section id="acerca">
+            <center><h2 class="h25">Acerca de Nosotros</h2></center>
+            <p>En nuestra tienda ofrecemos una amplia gama de productos de electrónica y robótica, especializados en Arduino y componentes relacionados. Nuestra misión es proporcionar a los entusiastas y profesionales las herramientas necesarias para llevar sus proyectos al siguiente nivel.
+                 Prof.Camilo deme todos los puntos de la web porfa...</p>
+        </section>
+        
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <p id="message" class="message"> Se añadio al Carrito</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Electrónica y Robótica. Todos los derechos reservados.
+             Hecho por Daniel Mejia.</p>
+    </footer>
+
+
+  
+    
+    <script src="2.js"></script>
+</body>
+</html>
